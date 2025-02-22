@@ -42,8 +42,7 @@ def save_numpy_array_data(file_path: str, array: np.array) -> None:
     
 def save_object(file_path: str, obj: object) -> None:
     try:
-        print("#"*200)
-        print(file_path)
+        # print(file_path)
         logging.info("Entered the save object method of Main_utils class")
         os.makedirs(os.path.dirname(file_path), exist_ok=True)
         with open(file_path, 'wb') as file_obj:
