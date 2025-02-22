@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 load_dotenv()
 uri = os.getenv("MONGO_DB_URL")
 
-# Create a new client and connect to the server
+### Create a new client and connect to the server
 client = MongoClient(uri)
 
 # Send a ping to confirm a successful connection
